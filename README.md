@@ -1,115 +1,108 @@
-[![Electron Logo](https://electronjs.org/images/electron-logo.svg)](https://electronjs.org)
-
-[![CircleCI Build Status](https://circleci.com/gh/electron/electron/tree/main.svg?style=shield)](https://circleci.com/gh/electron/electron/tree/main)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/4lggi9dpjc1qob7k/branch/main?svg=true)](https://ci.appveyor.com/project/electron-bot/electron-ljo26/branch/main)
-[![Electron Discord Invite](https://img.shields.io/discord/745037351163527189?color=%237289DA&label=chat&logo=discord&logoColor=white)](https://discord.gg/electronjs)
-
-:memo: Available Translations: 🇨🇳 🇧🇷 🇪🇸 🇯🇵 🇷🇺 🇫🇷 🇺🇸 🇩🇪.
-View these docs in other languages on our [Crowdin](https://crowdin.com/project/electron) project.
-
-The Electron framework lets you write cross-platform desktop applications
-using JavaScript, HTML and CSS. It is based on [Node.js](https://nodejs.org/) and
-[Chromium](https://www.chromium.org) and is used by the [Visual Studio
-Code](https://github.com/Microsoft/vscode/) and many other [apps](https://electronjs.org/apps).
-
-Follow [@electronjs](https://twitter.com/electronjs) on Twitter for important
-announcements.
-
-This project adheres to the Contributor Covenant
-[code of conduct](https://github.com/electron/electron/tree/main/CODE_OF_CONDUCT.md).
-By participating, you are expected to uphold this code. Please report unacceptable
-behavior to [coc@electronjs.org](mailto:coc@electronjs.org).
-
-## Installation
-
-To install prebuilt Electron binaries, use [`npm`](https://docs.npmjs.com/).
-The preferred method is to install Electron as a development dependency in your
-app:
-
-```sh
-npm install electron --save-dev
-```
-
-For more installation options and troubleshooting tips, see
-[installation](docs/tutorial/installation.md). For info on how to manage Electron versions in your apps, see
-[Electron versioning](docs/tutorial/electron-versioning.md).
-
-## Platform support
-
-Each Electron release provides binaries for macOS, Windows, and Linux.
-
-* macOS (Catalina and up): Electron provides 64-bit Intel and ARM binaries for macOS. Apple Silicon support was added in Electron 11.
-* Windows (Windows 10 and up): Electron provides `ia32` (`x86`), `x64` (`amd64`), and `arm64` binaries for Windows. Windows on ARM support was added in Electron 5.0.8. Support for Windows 7, 8 and 8.1 was [removed in Electron 23, in line with Chromium's Windows deprecation policy](https://www.electronjs.org/blog/windows-7-to-8-1-deprecation-notice).
-* Linux: The prebuilt binaries of Electron are built on Ubuntu 20.04. They have also been verified to work on:
-  * Ubuntu 18.04 and newer
-  * Fedora 32 and newer
-  * Debian 10 and newer
-
-## Quick start & Electron Fiddle
-
-Use [`Electron Fiddle`](https://github.com/electron/fiddle)
-to build, run, and package small Electron experiments, to see code examples for all of Electron's APIs, and
-to try out different versions of Electron. It's designed to make the start of your journey with
-Electron easier.
-
-Alternatively, clone and run the
-[electron/electron-quick-start](https://github.com/electron/electron-quick-start)
-repository to see a minimal Electron app in action:
-
-```sh
-git clone https://github.com/electron/electron-quick-start
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a href="https://electronjs.org" rel="nofollow"><img src="https://camo.githubusercontent.com/f076c94650baf4751dfbd6efa6a8a06f95f59cced91e3bd5b0616ffa9864aba8/68747470733a2f2f656c656374726f6e6a732e6f72672f696d616765732f656c656374726f6e2d6c6f676f2e737667" alt="电子标志" data-canonical-src="https://electronjs.org/images/electron-logo.svg" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://circleci.com/gh/electron/electron/tree/main" rel="nofollow"><img src="https://camo.githubusercontent.com/719261f425023d29070639f7c8201d784f7680b21f5841a6540d7e816b75d1e4/68747470733a2f2f636972636c6563692e636f6d2f67682f656c656374726f6e2f656c656374726f6e2f747265652f6d61696e2e7376673f7374796c653d736869656c64" alt="CircleCI 构建状态" data-canonical-src="https://circleci.com/gh/electron/electron/tree/main.svg?style=shield" style="max-width: 100%;"></a>
+<a href="https://ci.appveyor.com/project/electron-bot/electron-ljo26/branch/main" rel="nofollow"><img src="https://camo.githubusercontent.com/0deb5e493d7be184ac0ce6321eb90daedc8558757cb6fd0d3ad5c4303556a669/68747470733a2f2f63692e6170707665796f722e636f6d2f6170692f70726f6a656374732f7374617475732f346c6767693964706a6331716f62376b2f6272616e63682f6d61696e3f7376673d74727565" alt="AppVeyor 构建状态" data-canonical-src="https://ci.appveyor.com/api/projects/status/4lggi9dpjc1qob7k/branch/main?svg=true" style="max-width: 100%;"></a>
+<a href="https://discord.gg/electronjs" rel="nofollow"><img src="https://camo.githubusercontent.com/b0652413c6b6e55c89dbe550bf8fb6cf4cf1bf931115584ffd26a9532c0fc5d1/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f3734353033373335313136333532373138393f636f6c6f723d253233373238394441266c6162656c3d63686174266c6f676f3d646973636f7264266c6f676f436f6c6f723d7768697465" alt="电子不和谐邀请" data-canonical-src="https://img.shields.io/discord/745037351163527189?color=%237289DA&amp;label=chat&amp;logo=discord&amp;logoColor=white" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📝 可用翻译：🇨🇳🇧🇷🇪🇸🇯🇵🇷🇺🇫🇷🇺🇸🇩🇪。</font></font><a href="https://crowdin.com/project/electron" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在我们的Crowdin</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目中查看这些其他语言的文档</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Electron 框架允许您使用 JavaScript、HTML 和 CSS 编写跨平台桌面应用程序。</font><font style="vertical-align: inherit;">它基于</font></font><a href="https://nodejs.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Node.js</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和
+</font></font><a href="https://www.chromium.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chromium ，并由</font></font></a><font style="vertical-align: inherit;"></font><a href="https://github.com/Microsoft/vscode/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Visual Studio Code</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和许多其他</font></font><a href="https://electronjs.org/apps" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应用程序</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Twitter 上关注</font></font><a href="https://twitter.com/electronjs" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@ Electronjs</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取重要公告。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目遵守贡献者契约
+</font></font><a href="https://github.com/electron/electron/tree/main/CODE_OF_CONDUCT.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">行为准则</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">通过参与，您应该遵守此准则。</font></font><a href="mailto:coc@electronjs.org"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请向coc@electronjs.org</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">报告不可接受的行为</font><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-installation" class="anchor" aria-hidden="true" tabindex="-1" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要安装预构建的 Electron 二进制文件，请使用</font></font><a href="https://docs.npmjs.com/" rel="nofollow"><code>npm</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">首选方法是将 Electron 安装为应用程序中的开发依赖项：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>npm install electron --save-dev</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="npm install electron --save-dev" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关更多安装选项和故障排除提示，请参阅
+</font></font><a href="/electron/electron/blob/main/docs/tutorial/installation.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">有关如何管理应用程序中的 Electron 版本的信息，请参阅
+</font></font><a href="/electron/electron/blob/main/docs/tutorial/electron-versioning.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Electron 版本控制</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-platform-support" class="anchor" aria-hidden="true" tabindex="-1" href="#platform-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">平台支持</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每个 Electron 版本都提供适用于 macOS、Windows 和 Linux 的二进制文件。</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">macOS（Catalina 及更高版本）：Electron 为 macOS 提供 64 位 Intel 和 ARM 二进制文件。</font><font style="vertical-align: inherit;">Electron 11 中添加了 Apple Silicon 支持。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Windows（Windows 10 及更高版本）：Electron</font><font style="vertical-align: inherit;">为 Windows提供</font></font><code>ia32</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><code>x86</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)、</font></font><code>x64</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font><code>amd64</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">) 和二进制文件。</font></font><code>arm64</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Electron 5.0.8 中添加了 Windows on ARM 支持。</font><font style="vertical-align: inherit;">Electron 23 中删除了对 Windows 7、8 和 8.1 的支持</font></font><a href="https://www.electronjs.org/blog/windows-7-to-8-1-deprecation-notice" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，这符合 Chromium 的 Windows 弃用政策</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linux：Electron 的预构建二进制文件是在 Ubuntu 20.04 上构建的。</font><font style="vertical-align: inherit;">它们还被验证可以用于：
+</font></font><ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ubuntu 18.04 及更高版本</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fedora 32 及更高版本</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Debian 10 及更高版本</font></font></li>
+</ul>
+</li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-quick-start--electron-fiddle" class="anchor" aria-hidden="true" tabindex="-1" href="#quick-start--electron-fiddle"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速入门和电子小提琴</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于</font></font><a href="https://github.com/electron/fiddle"><code>Electron Fiddle</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+构建、运行和打包小型 Electron 实验，查看所有 Electron API 的代码示例，并尝试不同版本的 Electron。</font><font style="vertical-align: inherit;">它旨在让您更轻松地开始使用 Electron 之旅。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者，克隆并运行
+</font></font><a href="https://github.com/electron/electron-quick-start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电子/电子快速启动</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+存储库以查看正在运行的最小电子应用程序：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>git clone https://github.com/electron/electron-quick-start
+<span class="pl-c1">cd</span> electron-quick-start
+npm install
+npm start</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone https://github.com/electron/electron-quick-start
 cd electron-quick-start
 npm install
-npm start
-```
+npm start" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<h2 tabindex="-1" dir="auto"><a id="user-content-resources-for-learning-electron" class="anchor" aria-hidden="true" tabindex="-1" href="#resources-for-learning-electron"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学习 Electron 的资源</font></font></h2>
+<ul dir="auto">
+<li><a href="https://electronjs.org/docs" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">electrojs.org/docs</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - Electron 的所有文档</font></font></li>
+<li><a href="https://github.com/electron/fiddle"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">electro/fiddle</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 构建、运行和打包小型电子实验的工具</font></font></li>
+<li><a href="https://github.com/electron/electron-quick-start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">electronics/electron-quick-start</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 一个非常基本的入门 Electron 应用程序</font></font></li>
+<li><a href="https://electronjs.org/community#boilerplates" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">electrojs.org/community#boilerplates</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - 社区创建的示例入门应用程序</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-programmatic-usage" class="anchor" aria-hidden="true" tabindex="-1" href="#programmatic-usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">程序化使用</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">大多数人从命令行使用 Electron，但如果您在</font><strong><font style="vertical-align: inherit;">Node 应用程序</font></strong></font><code>electron</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（而不是 Electron 应用程序）内进行 require </font><font style="vertical-align: inherit;">，它将返回二进制文件的文件路径。</font><font style="vertical-align: inherit;">使用它从 Node 脚本生成 Electron：</font></font><strong><font style="vertical-align: inherit;"></font></strong><font style="vertical-align: inherit;"></font></p>
+<div class="highlight highlight-source-js notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">const</span> <span class="pl-s1">electron</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'electron'</span><span class="pl-kos">)</span>
+<span class="pl-k">const</span> <span class="pl-s1">proc</span> <span class="pl-c1">=</span> <span class="pl-en">require</span><span class="pl-kos">(</span><span class="pl-s">'node:child_process'</span><span class="pl-kos">)</span>
 
-## Resources for learning Electron
+<span class="pl-c">// will print something similar to /Users/maf/.../Electron</span>
+<span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">electron</span><span class="pl-kos">)</span>
 
-* [electronjs.org/docs](https://electronjs.org/docs) - All of Electron's documentation
-* [electron/fiddle](https://github.com/electron/fiddle) - A tool to build, run, and package small Electron experiments
-* [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - A very basic starter Electron app
-* [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - Sample starter apps created by the community
-
-## Programmatic usage
-
-Most people use Electron from the command line, but if you require `electron` inside
-your **Node app** (not your Electron app) it will return the file path to the
-binary. Use this to spawn Electron from Node scripts:
-
-```javascript
-const electron = require('electron')
+<span class="pl-c">// spawn Electron</span>
+<span class="pl-k">const</span> <span class="pl-s1">child</span> <span class="pl-c1">=</span> <span class="pl-s1">proc</span><span class="pl-kos">.</span><span class="pl-en">spawn</span><span class="pl-kos">(</span><span class="pl-s1">electron</span><span class="pl-kos">)</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="const electron = require('electron')
 const proc = require('node:child_process')
 
 // will print something similar to /Users/maf/.../Electron
 console.log(electron)
 
 // spawn Electron
-const child = proc.spawn(electron)
-```
-
-### Mirrors
-
-* [China](https://npmmirror.com/mirrors/electron/)
-
-See the [Advanced Installation Instructions](https://www.electronjs.org/docs/latest/tutorial/installation#mirror) to learn how to use a custom mirror.
-
-## Documentation translations
-
-We crowdsource translations for our documentation via [Crowdin](https://crowdin.com/project/electron).
-We currently accept translations for Chinese (Simplified), French, German, Japanese, Portuguese,
-Russian, and Spanish.
-
-## Contributing
-
-If you are interested in reporting/fixing issues and contributing directly to the code base, please see [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
-
-## Community
-
-Info on reporting bugs, getting help, finding third-party tools and sample apps,
-and more can be found on the [Community page](https://www.electronjs.org/community).
-
-## License
-
-[MIT](https://github.com/electron/electron/blob/main/LICENSE)
-
-When using Electron logos, make sure to follow [OpenJS Foundation Trademark Policy](https://openjsf.org/wp-content/uploads/sites/84/2021/01/OpenJS-Foundation-Trademark-Policy-2021-01-12.docx.pdf).
+const child = proc.spawn(electron)" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<h3 tabindex="-1" dir="auto"><a id="user-content-mirrors" class="anchor" aria-hidden="true" tabindex="-1" href="#mirrors"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">镜子</font></font></h3>
+<ul dir="auto">
+<li><a href="https://npmmirror.com/mirrors/electron/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中国</font></font></a></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="https://www.electronjs.org/docs/latest/tutorial/installation#mirror" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高级安装说明</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以了解如何使用自定义镜像。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-documentation-translations" class="anchor" aria-hidden="true" tabindex="-1" href="#documentation-translations"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档翻译</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://crowdin.com/project/electron" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们通过Crowdin</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">众包翻译我们的文档</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">我们目前接受中文（简体）、法语、德语、日语、葡萄牙语、俄语和西班牙语的翻译。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-contributing" class="anchor" aria-hidden="true" tabindex="-1" href="#contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您有兴趣报告/修复问题并直接为代码库做出贡献，请参阅</font></font><a href="/electron/electron/blob/main/CONTRIBUTING.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CONTRIBUTING.md</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取有关我们正在寻找的内容以及如何开始的更多信息。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-community" class="anchor" aria-hidden="true" tabindex="-1" href="#community"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关报告错误、获取帮助、查找第三方工具和示例应用程序等的信息可以在</font></font><a href="https://www.electronjs.org/community" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">社区页面</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上找到。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content-license" class="anchor" aria-hidden="true" tabindex="-1" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2>
+<p dir="auto"><a href="https://github.com/electron/electron/blob/main/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">麻省理工学院</font></font></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Electron 徽标时，请确保遵循</font></font><a href="https://openjsf.org/wp-content/uploads/sites/84/2021/01/OpenJS-Foundation-Trademark-Policy-2021-01-12.docx.pdf" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OpenJS 基金会商标政策</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+</article></div>
